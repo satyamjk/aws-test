@@ -5,6 +5,6 @@ app.get('/', (req, res) => {
     res.send("Welcome to the app");
 });
 
-app.listen(3000, () => {
+app.listen(process.env.port || 3000, () => {
     console.log("test-success");
 });
